@@ -15,6 +15,7 @@ public class ReverseSolution {
       n = n * 10 + x % 10;
       x = x / 10;
       if (n / 10 != temp) {
+        // 倒回来计算，与之前保存的结果不同，说明移除
         return 0;
       }
     }
