@@ -1,11 +1,14 @@
 import lengthOfLongestSubstring.LengthOfLongestSubstring;
+import reverse.ReverseSolution;
 
 import java.io.IOException;
 
+
 public class MainClass {
   public static void main(String[] args) throws IOException {
-    String s = "abcabcbb";
-    int length = new LengthOfLongestSubstring().lengthOfLongestSubstring(s);
-    System.out.println(length);
+    System.out.println(new ReverseSolution().reverse(1534236469));
+    System.out.println(new ReverseSolution().reverse(321));
+    System.out.println(new ReverseSolution().reverse(-123));
+    System.out.println(new ReverseSolution().reverse(0));
   }
 }
