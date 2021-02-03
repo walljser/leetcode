@@ -1,3 +1,5 @@
+package findMedianSortedArrays;
+
 /**
   4. 寻找两个正序数组的中位数
   给定两个大小为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的中位数。
@@ -27,8 +29,8 @@
   输出：2.00000
  */
 
-public class FindMediaSotedArrays {
-  public double findMediaSotedArrays(int[] nums1, int[] nums2) {
-
+public class FindMediaSortedArrays {
+  public double findMediaSortedArrays(int[] nums1, int[] nums2) {
+    return 2.0;
   }
 }
