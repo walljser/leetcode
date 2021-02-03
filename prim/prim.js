@@ -6,6 +6,8 @@ const lowcost = [];
 
 /**
  * 普莱姆算法，最小生成树
+ * 时间复杂度：O(n^2)
+ * 空间复杂度：用到closest，lowcost，O(n)
  */
 function prim (n, u0, c) {
   s[u0] = true; // 初始化，先将u0加入集合S
