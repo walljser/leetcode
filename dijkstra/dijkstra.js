@@ -1,3 +1,9 @@
+/**
+ * (1)初始化map，dist，p(记录前置顶点)，flag(记录是否加入子集)
+ * (2)找距离子集S最近的点u
+ * 根据(2)找出的点u，计算经过u，更新dist距离源点最近的距离
+ */
+
 const map = []
 let dist = []
 const INF = 1e10
