@@ -1,8 +1,10 @@
 package MainClass;
 
 import LongestPalindrome.LongestPalindrome;
+import findMedianSortedArrays.FindMediaSortedArrays;
 import lengthOfLongestSubstring.LengthOfLongestSubstring;
 import merge.MergeSolution;
+import quickSort.QuickSort;
 import reverse.ReverseSolution;
 
 import java.io.IOException;
@@ -10,13 +12,12 @@ import java.io.IOException;
 
 public class MainClass {
   public static void main(String[] args) throws IOException {
-//    int[] nums1 = {1,2,3,0,0,0};
-//    int[] nums2 = {2,5,6};
-    int[] nums1 = {1};
-    int[] nums2 = {};
-//    new MergeSolution().merge(nums1, 3, nums2, 3);
-    new MergeSolution().merge(nums1, 1, nums2, 0);
-    for (int num : nums1) {
+//    int[] nums1 = {1,2};
+//    int[] nums2 = {3,4};
+//    System.out.println(new FindMediaSortedArrays().findMediaSortedArrays(nums1, nums2));
+    int[] nums = {42, 15, 20, 6, 8, 38, 50, 12};
+    new QuickSort().quickSort(nums, 0, nums.length - 1);
+    for (int num: nums) {
       System.out.println(num);
     }
   }
