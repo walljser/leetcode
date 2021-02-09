@@ -16,10 +16,10 @@
  * @return {ListNode}
  */
 var mergeTwoLists = function(l1, l2) {
-  if (!l1 || !l1.val) {
+  if (!l1 || l1.val === undefined) {
     return l2;
   }
-  if (!l2 || !l2.val) {
+  if (!l2 || !l2.val === undefined) {
     return l1;
   }
   let h1 = l1;
