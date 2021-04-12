@@ -59,9 +59,9 @@ const reverseList = function (head) {
 const endOfFirstHalf = function (head) {
   let fast = head;
   let slow = head;
-  while (fast && fast.next && slow && slow.next && slow.next.next) {
+  while (fast && fast.next && fast.next.next && slow && slow.next) {
     fast = fast.next.next;
-    slow = slow.next.next;
+    slow = slow.next;
   }
   return slow;
 }
@@ -73,7 +73,7 @@ var isPalindrome = function (head) {
   const half = endOfFirstHalf(head);
   const secondHalfStart = reverseList(half.next);
 
-  let p1 = half;
+  let p1 = head;
   let p2 = secondHalfStart;
   let result = true;
   while (result && p2) {
