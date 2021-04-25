@@ -12,6 +12,33 @@ var DoubleList = function() {
   tail.prev = head;
   this.head = head;
   this.tail = tail;
+  this.size = 0;
+}
+
+DoubleList.prototype.add = function(node) {
+  node.next = this.tail;
+  node.prev = this.tail.prev;
+  this.tail.prev.next = node;
+  this.tail.prev = node;
+  this.size++;
+}
+
+DoubleList.prototype.removeFirst = function() {
+  const firstNode = this.head.next;
+  this.head.next = firstNode.next;
+  firstNode.next.prev = this.head;
+  this.size--;
+  return firstNode;
+}
+
+DoubleList.prototype.remove = function(node) {
+  node.prev.next = node.next;
+  node.next.prev = node.prev;
+  this.size--;
+}
+
+DoubleList.prototype.getSize = function() {
+  return this.size;
 }
 
 /**
